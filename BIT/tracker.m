@@ -10,7 +10,7 @@ function [positions, time] = tracker(video_path, img_files, pos, target_sz, show
     sigma_s = sqrt(prod(target_sz)) * sigma_s / ns; %normalize sigma_s according to target size
     
     labels = C2_labels(sigma_s, floor(ROI_sz / ns)); %C2 labels on Eq(17)
-	labels_fft = fft2(labels);
+    labels_fft = fft2(labels);
     hann_window = hann(size(labels_fft,1)) * hann(size(labels_fft,2))';%hann window
     
     task=2;
@@ -18,10 +18,10 @@ function [positions, time] = tracker(video_path, img_files, pos, target_sz, show
     diff_C2s=[];
     
     time = 0;
-	positions = zeros(numel(img_files), 2);
+    positions = zeros(numel(img_files), 2);
     
     %% visualization
-	if show_visualization, 
+    if show_visualization, 
         update_visualization = show_video(img_files, video_path, 0);
     end
 
@@ -58,7 +58,7 @@ function [positions, time] = tracker(video_path, img_files, pos, target_sz, show
                 end
                 pre_C2=C2;
             end
-		end
+        end
 
         ROI_patch = get_ROI(im, pos, ROI_sz); %obtain a ROI for training at estimated target position
         C1 = get_bif(ROI_patch, ns);
