@@ -17,4 +17,6 @@ If you use these models in your research, please cite:
 	
 ### Results
 0. Precisions plots on the TB2013:
-	![Precisions plots](http://github.com/caibolun/BIT/raw/master/TB50.jpg)
+	![Precisions plots](https://raw.githubusercontent.com/caibolun/BIT/master/TB50.jpg)
+0. Survival curves on the ALOV300++:
+	![Survival curves](https://raw.githubusercontent.com/caibolun/BIT/master/ALOV.jpg)
