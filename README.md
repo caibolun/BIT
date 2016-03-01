@@ -20,3 +20,5 @@ If you use these codes in your research, please cite:
 ![Precisions plots](https://raw.githubusercontent.com/caibolun/BIT/master/TB50.jpg)
 0. Survival curves on the ALOV300++:
   ![Survival curves](https://raw.githubusercontent.com/caibolun/BIT/master/ALOV.jpg)
+0. Video Demo                      
+[![BIT](http://img.youtube.com/vi/ODJ9bFog6Kk/0.jpg)](http://www.youtube.com/watch?v=ODJ9bFog6Kk)
