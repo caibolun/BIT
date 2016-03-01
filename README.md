@@ -14,3 +14,7 @@ If you use these models in your research, please cite:
 		number={3},
 		pages={1327-1339},
 	}
+	
+### Results
+0. Precisions plots on the TB2013:
+	![Precisions plots](http://github.com/caibolun/BIT/raw/master/TB50.jpg)
