@@ -81,7 +81,7 @@ function [positions, time] = tracker(video_path, img_files, pos, target_sz, show
         time = time + toc();
         positions(frame,:) = pos;
 		
-		%% visualization
+        %% visualization
         if show_visualization,
             box = [pos([2,1]) - target_sz([2,1])/2, target_sz([2,1])];
             stop = update_visualization(frame, box);
