@@ -1,9 +1,9 @@
 function C1 = get_bif(im, ns)
 
-	global cnmap
+    global cnmap
     if(isempty(cnmap))
-		temp=load('w2c.mat');
-		cnmap=temp.w2c;
+        temp=load('w2c.mat');
+        cnmap=temp.w2c;
     end  
     
     C1_color=[];
@@ -20,7 +20,7 @@ function C1 = get_bif(im, ns)
     xi=[7,9,11,13,15];
     sig=[2.8,3.6,4.5,5.4,6.3];
     lambda=[3.5,4.6,5.6,6.8,7.9];
-	orientations=4;
+    orientations=4;
     
     C1_gabor=[];
     if size(im,3)>1
@@ -28,18 +28,18 @@ function C1 = get_bif(im, ns)
     end
     im=single(im)/255;
     for scale=1:5
-		%% 1D Gabor filter
+        %% 1D Gabor filter
         [~,Gx] = filterGabor( xi(scale), sig(scale), lambda(scale));
         Gy=Gx';
-		%% multi scale orthogonal Gabor response maps on Eq(11) 
-		Dx=imfilter(im,Gx,'replicate');
+        %% multi scale orthogonal Gabor response maps on Eq(11) 
+        Dx=imfilter(im,Gx,'replicate');
         Dy=imfilter(im,Gy,'replicate');
         %% the orientation and magnitude of the Gabor gradient on Eq(12)
-		A=sqrt(Dx.^2+Dy.^2);
+        A=sqrt(Dx.^2+Dy.^2);
         Theta=atan2(Dy,Dx);
         Theta(Theta<0)=2*pi+Theta(Theta<0);
-		%% Eq(13), Eq(14) and Eq(4), Eq(5), Eq(6)
-		H = fga(A,Theta,ns,orientations,scale);
+        %% Eq(13), Eq(14) and Eq(4), Eq(5), Eq(6)
+        H = fga(A,Theta,ns,orientations,scale);
         C1_gabor=cat(3,C1_gabor,H);
     end
     
