@@ -16,7 +16,7 @@ If you use these codes in your research, please cite:
 	}
 	
 ### Results
-0. Precisions plots on the TB2013:      
+0. Precisions plots on the TB2013:[result](https://github.com/caibolun/BIT/blob/master/BIT_TRE_result.zip?raw=true "BIT_TRE_result")
 ![Precisions plots](https://raw.githubusercontent.com/caibolun/BIT/master/TB50.jpg)
 0. Survival curves on the ALOV300++:
   ![Survival curves](https://raw.githubusercontent.com/caibolun/BIT/master/ALOV.jpg)
