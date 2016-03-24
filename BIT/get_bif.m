@@ -29,7 +29,7 @@ function C1 = get_bif(im, ns)
     im=single(im)/255;
     for scale=1:5
         %% 1D Gabor filter
-        [~,Gx] = filterGabor( xi(scale), sig(scale), lambda(scale));
+        Gx = filterGabor( xi(scale), sig(scale), lambda(scale));
         Gy=Gx';
         %% multi scale orthogonal Gabor response maps on Eq(11) 
         Dx=imfilter(im,Gx,'replicate');
