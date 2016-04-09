@@ -16,9 +16,9 @@ If you use these codes in your research, please cite:
 	}
 	
 ### Results
-#### 1. Precisions plots on the TB2013: [Result](https://github.com/caibolun/BIT/blob/master/BIT_TRE_result.zip?raw=true "BIT_TRE_result.zip")
-![Precisions plots](https://raw.githubusercontent.com/caibolun/BIT/master/TB50.jpg)
-#### 2. Survival curves on the ALOV300++:
-  ![Survival curves](https://raw.githubusercontent.com/caibolun/BIT/master/ALOV.jpg)
+#### 1. Precisions plots on the TB2013: [Result](http://caibolun.github.io/BIT/TB50_TRE_result.zip)
+![Precisions plots](https://caibolun.github.io/BIT/TB50.jpg)
+#### 2. Survival curves on the ALOV300++: [Result](http://caibolun.github.io/BIT/ALOV_result.zip)
+  ![Survival curves](https://caibolun.github.io/BIT/ALOV.jpg)
 #### 3. Video Demo                      
 [![BIT](http://img.youtube.com/vi/ODJ9bFog6Kk/0.jpg)](http://www.youtube.com/watch?v=ODJ9bFog6Kk)
