@@ -4,8 +4,8 @@ clc;
 clear;
 close all;
 gui=1;
-base_path = '/home/lab-cai.bolun/Dataset/TrackingBenchmark';
-mode = 'all';
+base_path = './TB50';
+mode = 'choose';
 tracker_name ='BIT';
 addpath(['./' tracker_name]);
 

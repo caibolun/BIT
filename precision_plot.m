@@ -36,7 +36,7 @@ function precisions = precision_plot(positions, ground_truth, title, show)
 	
 	%plot the precisions
 	if show == 1,
-		figure('Number','off', 'Name',['Precisions - ' title])
+		figure('Name',['Precisions - ' title])
         preciseplot=[0;precisions];
 		plot(0:50,preciseplot, 'k-', 'LineWidth',3)
 		xlabel('Threshold'), ylabel('Precision')

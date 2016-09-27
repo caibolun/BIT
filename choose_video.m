@@ -21,7 +21,8 @@ function video_name = choose_video(base_path)
 		if mod(i,2)==0
 			fprintf('\n');
         end
-	end
+    end
+    fprintf('\n');
 	choice=input('Input the video number:');
 	if isempty(choice)||choice>numel(names),  %user cancelled
 		video_name = [];
